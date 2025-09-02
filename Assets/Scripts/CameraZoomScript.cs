@@ -3,16 +3,17 @@ using System;
 
 public class CameraZoomScript : MonoBehaviour
 {
-    float minFov = 15f;
-    public float maxFov = 120f;
+    float minFov = 60f;
+    float maxFov = 120f;
     public float zoomSensitivity = 15f;
     public float moveSensitivity = 0.035f;
 
-    float maxCameraX = 32f;
-    float maxCameraY = 40f;
+    public float maxCameraX;
+    public float maxCameraY;
 
     int horizontalMove = 0;
     int verticalMove = 0;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
